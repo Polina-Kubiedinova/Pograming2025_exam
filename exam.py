@@ -14,19 +14,19 @@ def get_factorial(n):
         result *= i
    return result
 
-
-try:
-      # Отримання даних від користувача
-      user_input = input("Введіть ціле число n для обчислення факторіалу: ")
-      
-      n = int(user_input)
-      
-      result = get_factorial(n)
-      print(f"{n}! = {result}")
-      
-except ValueError as e:
-      # Обробка виключення (якщо n < 0 або введено не число)
-      print(f"Помилка: {e}")
-except Exception as e:
-      # Обробка будь-яких інших помилок
-      print(f"Виникла неочікувана помилка: {e}")
+if __name__ == "__main__":
+   try:
+         # Отримання даних від користувача
+         user_input = input("Введіть ціле число n для обчислення факторіалу: ")
+         
+         n = int(user_input)
+         
+         result = get_factorial(n)
+         print(f"{n}! = {result}")
+         
+   except ValueError as e:
+         # Обробка виключення (якщо n < 0 або введено не число)
+         print(f"Помилка: {e}")
+   except Exception as e:
+         # Обробка будь-яких інших помилок
+         print(f"Виникла неочікувана помилка: {e}")
