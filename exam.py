@@ -17,7 +17,7 @@ def get_factorial(n):
 if __name__ == "__main__":
    try:
          # Отримання даних від користувача
-         user_input = input("Введіть ціле число n для обчислення факторіалу: ")
+         user_input = input("Введіть ЦІЛЕ ЧИСЛО n для обчислення факторіалу: ")
          
          n = int(user_input)
          
